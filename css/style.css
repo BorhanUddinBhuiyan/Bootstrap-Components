@@ -1,0 +1,19 @@
+.box{
+  min-height: 100px;
+  border-radius: 5px;
+  background: #eafbfc;
+  margin-bottom: 2rem;
+}
+.c_box{
+  background: #eafbfc;
+  margin-bottom: 2rem;
+}
+.b_box{
+  border-radius: 0;
+}
+.f_box{
+   background: #eafbfc;
+}
+.a_box{
+  min-height: 200px;
+}
