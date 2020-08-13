@@ -760,7 +760,6 @@
   <!-- Carousel section -->
   <div class="container border border-success rounded mb-4">
     <h2 class="text-success text-center mb-3">Carousels</h2>
-    <h4 class="text-info mb-3">Slide Only</h4>
     <div id="exp1" class="carousel slide carousel-fade mb-3" data-ride="carousel">
       <ol class="carousel-indicators">
         <li class="active" data-target="#exp1" data-slide-to="0"></li>
@@ -803,7 +802,122 @@
  <!-- Custom carousel -->
   <section class="container border border-success rounded mb-4">
     <h2 class="text-success text-center mb-3">Custom Carousel</h2>
+    <div class="banner">
+      <div class="row">
+        <div class="d-none d-sm-block col-sm-8 col-md-7 col-lg-6">
+          <div id="exp2" class="carousel slide mb-3" data-ride="carousel">
+            <ol class="carousel-indicators custom-ind">
+              <li class="active" data-target="#exp2" data-slide-to="0"></li>
+              <li data-target="#exp2" data-slide-to="1"></li>
+              <li data-target="#exp2" data-slide-to="2"></li> 
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="3000">
+                <div class="slider">
+                  <h2>Carousel Heading 1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut praesentium labore, atque odit quia dolore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dicta.</p>
+                  <button class="btn btn-primary">learn more</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="4000">
+                <div class="slider">
+                  <h2>Carousel Heading 2</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut praesentium labore, atque odit quia dolore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, fugiat.</p>
+                  <button class="btn btn-primary">learn more</button>
+                </div>
+              </div> 
+              <div class="carousel-item" data-interval="3000">
+                <div class="slider">
+                  <h2>Carousel Heading 3</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut praesentium labore, atque odit quia dolore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nemo.</p>
+                  <button class="btn btn-primary">learn more</button>
+                </div>
+              </div>          
+            </div>
+            <a href="#exp2" role="button" data-slide="prev"  class="carousel-control-prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">previous</span>
+            </a>
+            <a href="#exp2" role="button" data-slide="next"  class="carousel-control-next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">next</span>
+            </a>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <hr>
   </section>
+  <section class="container border border-success rounded mb-4">
+    <h2 class="text-success text-center mb-3">Collapse</h2>
+    <div class="mb-3">
+      <a href="#card1" class="btn btn-primary" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="card1">Anchor with href</a>
+      <button class="btn btn-primary" type="button" data-target="#card2" data-toggle="collapse" aria-expanded="false" aria-controls="card2" > Button with data-target</button>
+      <button class="btn btn-primary" type="button" data-target=".multiple-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="card1 card2" >Multiple Targets</button>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multiple-collapse" id="card1">
+          <div class="card border-dark">
+            <h4 class="card-header">This Heading 1</h4>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloremque quis molestias rem, quasi illum a at dolor error accusantium repellendus amet nobis quibusdam aut pariatur, ipsam maiores voluptate excepturi.</p>
+              <button class="btn btn-dark">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multiple-collapse" id="card2">
+          <div class="card border-danger">
+            <h4 class="card-header">This Heading 1</h4>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloremque quis molestias rem, quasi illum a at dolor error accusantium repellendus amet nobis quibusdam aut pariatur, ipsam maiores voluptate excepturi.</p>
+              <button class="btn btn-danger">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="text-info mb-3">Accordion</h4>
+    <div class="accordion mb-3" id="AccordionExample">
+      <div class="card">
+        <div class="card-header" id="heading1">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-black" data-target="#card3" data-toggle="collapse" aria-expanded="true">Accordion Heading 1</button>
+          </h2>
+        </div>
+      </div>
+      <div class="collapse show py-3 border" id="card3" aria-labelledby="heading1" data-parent="#AccordionExample" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est officiis architecto, cum blanditiis, velit impedit quis sequi cupiditate eum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quod voluptatum consequuntur porro voluptas eligendi in accusantium dolorum magni magnam commodi dolore nulla nihil, animi esse quisquam culpa delectus corporis.
+      </div>
+      <div class="card">
+        <div class="card-header" id="heading2">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-black collapsed" data-target="#card4" data-toggle="collapse" aria-expanded="true">Accordion Heading 1</button>
+          </h2>
+        </div>
+      </div>
+      <div class="collapse py-3 border" id="card4" aria-labelledby="heading2" data-parent="#AccordionExample" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est officiis architecto, cum blanditiis, velit impedit quis sequi cupiditate eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusantium porro sed voluptatibus placeat natus ducimus nostrum provident deserunt hic esse, voluptate soluta numquam impedit reprehenderit, a illum, ut, iure!
+      </div>
+      <div class="card">
+        <div class="card-header" id="heading3">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-black collapsed" data-target="#card5" data-toggle="collapse" aria-expanded="true">Accordion Heading 1</button>
+          </h2>
+        </div>
+      </div>
+      <div class="collapse py-3 border" id="card5" aria-labelledby="heading3" data-parent="#AccordionExample" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est officiis architecto, cum blanditiis, velit impedit quis sequi cupiditate eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum velit deleniti qui, doloribus, rerum molestiae aspernatur excepturi rem numquam earum neque, asperiores sint! Nam sed porro ipsum eveniet. Quaerat, soluta.
+      </div>
+    </div>
+    <hr>
+  </section>
+  <section class="container border border-success mb-4 rounded">
+  </section>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS CDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->

@@ -1,19 +1,30 @@
-.box{
-  min-height: 100px;
-  border-radius: 5px;
-  background: #eafbfc;
-  margin-bottom: 2rem;
+.banner{
+  background: url(../images/pexels-pok-rie-122964.jpg) no-repeat;
+  background-size: cover
 }
-.c_box{
-  background: #eafbfc;
-  margin-bottom: 2rem;
+.slider{
+  margin: 4rem .9rem 2rem;
+  padding:5rem 3.3em;
+  color: white;
+  background-color: rgba(1,1,1,.4);
 }
-.b_box{
-  border-radius: 0;
+.slider h2{
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
 }
-.f_box{
-   background: #eafbfc;
+.slider p{
+
 }
-.a_box{
-  min-height: 200px;
+.slider button{
+  margin:1.5rem 0;
+}
+.custom-ind{
+    bottom: 25px;
+}
+
+.custom-ind li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+
 }

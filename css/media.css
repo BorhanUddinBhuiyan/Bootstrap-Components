@@ -2,7 +2,29 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) { 
+  .slider{
+  margin: 2rem 0;
+  padding:3rem;
+  }
+  .slider h2{
+  padding-bottom: .5rem;
+  font-size: 1.3rem;
+  }
+  .slider p{
+  font-size:0.8rem;
+}
+.slider button{
+  margin:1rem 0;
+}
+.custom-ind{
+    bottom: 18px;
+}
+.custom-ind li {
+  width: 10px;
+  height: 10px;
+}
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
